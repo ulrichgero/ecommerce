@@ -1,0 +1,13 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: info@ulrichgero.me
+Date: Tue, 21 Apr 2020 02:43:11 -0000
+Message-ID: 
+ <158743699156.40195.179251307635051498@mbp-di-ulrich.home-life.hub>
+
+Someone asked for password reset for email info@ulrichgero.me. Follow the link below:
+http://127.0.0.1:8000/accounts/reset/MQ/5fu-7e4986fdbe84f6f04be5/
+-------------------------------------------------------------------------------
