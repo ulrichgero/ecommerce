@@ -24,7 +24,7 @@ urlpatterns = [
     path('product/', include('product.urls')),
     path('tinymce/', include('tinymce.urls')),
     path('', include('accounts.urls')), #account-app urls
-    path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', TemplateView.as_view(template_name='index.html'), name='index'),
 ] + static(settings.MEDIA_URL,  document_root=settings.MEDIA_ROOT)
 if settings.DEBUG: # new
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

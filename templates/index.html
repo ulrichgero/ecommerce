@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="hero" style="background-image: url('/static/images/kb-seller.png'); background-size: cover; padding-top: 180px; padding-bottom: 180px;">
+    <div class="container">
+      <h1 class="display-3">Hello, world!</h1>
+      <p>This is a template for a simple marketing or informational website. It includes a </br>large callout called a jumbotron and three supporting pieces of content. Use it </br>as a starting point to create something more unique.</p>
+      <p><a class="btn btn-outline-warning btn-md" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container pt-4 mt-5 pb-4 items-align-center text-white">
+    <!-- Example row of columns -->
+    <div class="row">
+        <!--shop by categories-->
+        <div class="col-lg-12">
+            <p class="text-center">Shop By Categories</p>
+        </div>
+      <div class="col">
+        <div class="text-left" style="background-image: url('./static/images/women-cat.jpg'); padding: 4rem; background-size: cover">
+        <h2>SHOP WOMEN</h2>
+      </div>
+    </div>
+    
+      <div class="col">
+        <div class="text-left" style="background-image: url('./static/images/swim.jpg'); padding: 4rem; background-size: cover">
+        <h2>SHOP TOP</h2>
+      </div>
+      </div>
+
+      <div class="col" >
+        <div class="text-left" style="background-image: url('./static/images/banner02.jpg'); padding: 4rem; background-size: cover">
+        <h2>ACCESSORIES</h2>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    
+   
+    <div class="top-seller m-4" style="background-image: url(./static/images/seller-bg.png);  background-size: cover; padding: 180px; opacity: rgba(23, 29, 23, 0.3);">
+      <div class="container text-center items-align-center text-white">
+        <h3 class="font-weight-bold">BEST OF THE MONTH</h3>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing </br>elitr sed diam nonumy eirmod </p>
+        <p>
+          <button class="btn btn-outline-secondary">shop Now</button>
+          <button class="btn btn-outline-warning">Discover Seller</button>
+        </p>
+      </div>
+    </div>
+
+  </div> <!-- /container -->
+{% endblock content %}

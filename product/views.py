@@ -11,8 +11,7 @@ from .models import Product, Category
 
 #get product into the home page
 
-def homeprod(request):
-    return()
+
 
 class ProductList(ListView):
     model = Product
@@ -68,12 +67,19 @@ class CategoryDetail(DetailView):
 
 class CategoryList(ListView):
     model = Category
-    paginate_by = 3 
+    paginate_by = 12 
 
     def get_queryset(self):
         return Category.objects.all().filter()
     
 
+def allprod(request):
+    product = Product.objects.all()
+    context = {'product' : product}
+    return render(request, 'home.html', context=context)
 
 
-
+def category_list(request):
+    category = Category.objects.all()
+    context = { 'category' : category}
+    return render(request, 'product_list.html', context=context )
